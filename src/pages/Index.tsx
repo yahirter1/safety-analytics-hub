@@ -20,21 +20,21 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <SecurityCard
               title="Accesos Totales"
-              value={securityMetrics.totalAccesses}
+              value={securityMetrics.totalAccesses.toString()}
               icon={Shield}
               trend={{ value: 12, isPositive: true }}
               delay={0}
             />
             <SecurityCard
               title="Inicios Exitosos"
-              value={securityMetrics.successfulLogins}
+              value={securityMetrics.successfulLogins.toString()}
               icon={UserCheck}
               trend={{ value: 8, isPositive: true }}
               delay={1}
             />
             <SecurityCard
               title="Intentos Fallidos"
-              value={securityMetrics.failedAttempts}
+              value={securityMetrics.failedAttempts.toString()}
               icon={AlertTriangle}
               trend={{ value: 5, isPositive: false }}
               delay={2}
