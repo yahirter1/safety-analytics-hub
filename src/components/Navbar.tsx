@@ -1,11 +1,10 @@
 
-import { Bell, Menu, Settings } from "lucide-react";
+import { Bell, Menu, Settings, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface NavbarProps {
   toggleSidebar?: () => void;
@@ -54,7 +53,6 @@ const Navbar = ({ toggleSidebar, isSidebarOpen }: NavbarProps) => {
         <h1 className="text-lg font-medium">Panel de Seguridad</h1>
       </div>
       <div className="flex items-center gap-2">
-        <ThemeToggle />
         <Button variant="ghost" size="icon">
           <Bell className="h-5 w-5" />
         </Button>
